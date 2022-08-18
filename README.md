@@ -12,8 +12,11 @@ We were assigned a task to implement basic functions regarding pStrings in the a
 
 # pString Structure Defenition
 typedef struct{ 
+
 char size; 
+
 char strign[255]; 
+
 }pString;
 
 # Project Files
