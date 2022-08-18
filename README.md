@@ -17,15 +17,13 @@ char strign[255];
 }pString;
 
 # Project Files
-1. run_main.s- 
+- run_main.s- 
 The engine of the project. We are reciveing two pStrings from the user, allocating memory on the stack frame. Also we scan an int from the user, which will be used as a case for our switch case implementation in func_select.s
-
 The function passes as parameters pointers to each pString and to the choice scaned from the user.
 
-2. func_select.s- 
+- func_select.s- 
 Implementation of switch case using a jump table. First we make sure to clear the offset between the user's choice and the cases on the jump table (In our case an off set of 50).
-
 Each choice from the user can result in two outcomes: invoking a proper function from pstring.s or a default case which will print the prompt 'invalid option!'
 
-3. pstring.s- 
+- pstring.s- 
 Assembly implementation of the functions declared in pstring.h file
